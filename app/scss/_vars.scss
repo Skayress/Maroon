@@ -1,9 +1,24 @@
 // Переменные
-
+$text-color: #122947;
+$bg-color: #F4F1ED;
 
 
 // Наследование
+%title {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 130%;
+	color: $text-color;
+}
 
+%text {
+	font-family: 'M PLUS 1p', sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 26px;
+	color: $text-color;
+}
 
 
 // Миксины
