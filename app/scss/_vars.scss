@@ -12,11 +12,16 @@ $bg-color: #F4F1ED;
 }
 
 %text {
-	font-family: 'M PLUS 1p', sans-serif;
+	font-family: 'm-plus-1p-Regular';
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 26px;
 	color: $text-color;
+}
+
+%text-medium {
+	font-family: 'm-plus-1p-Medium';
+	font-weight: 500;
 }
 
 %footer-text {

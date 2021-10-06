@@ -1,2 +1,20 @@
 // ШРИФТЫ
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500&family=Raleway:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+@font-face {
+	font-family: 'm-plus-1p-Regular';
+	src: url('../fonts/m-plus-1p-Regular.woff2') format('woff2'),
+		url('../fonts/m-plus-1p-Regular.woff') format('woff');
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'm-plus-1p-Medium';
+	src: url('../fonts/m-plus-1p-Medium.woff2') format('woff2'),
+		url('../fonts/m-plus-1p-Medium.woff') format('woff');
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+}
