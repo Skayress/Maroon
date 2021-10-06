@@ -1,0 +1,46 @@
+.header {
+	padding: 40px 0;
+	border-bottom: 1px solid #DBDCE0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__menu {
+		justify-content: flex-end;
+		margin-right: 51px;
+	}
+}
+
+.logo {
+	display: flex;
+}
+
+.menu {
+	display: flex;
+	flex-grow: 1;
+	font-size: 16px;
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+	&__item {
+		line-height: 1;
+		&:not(:last-child) {
+			margin-right: 35px;
+		}
+	}
+}
+
+.actions {
+	display: flex;
+	align-items: center;
+	&__item {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__link {
+		display: flex;
+	}
+}

@@ -2,7 +2,6 @@
 $text-color: #122947;
 $bg-color: #F4F1ED;
 
-
 // Наследование
 %title {
 	font-family: 'Raleway', sans-serif;
@@ -18,6 +17,12 @@ $bg-color: #F4F1ED;
 	font-size: 18px;
 	line-height: 26px;
 	color: $text-color;
+}
+
+%footer-text {
+	font-size: 12px;
+	line-height: 18px;
+	color: #959595;
 }
 
 

@@ -1,0 +1,41 @@
+.footer {
+	background-color: $bg-color;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+	&__top {
+		border-bottom: 1px solid #D1D1D1;
+	}
+	&__content{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 60px 15px;
+	}
+	&__logo {
+		margin-right: 69px;
+	}
+	&__menu {
+		justify-content: flex-start;
+	}
+	&__copy {
+		padding: 22px 15px;
+		display: flex;
+		justify-content: space-between;
+		@extend %footer-text;
+	}
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	&__item {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
+	&__link {
+		display: flex;
+	}
+}

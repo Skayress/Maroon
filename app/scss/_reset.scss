@@ -49,3 +49,9 @@ textarea,
 select {
   font: inherit;
 }
+
+/* Наследование цвета и отмена 		подчеркивания у ссылок */
+a {
+	color: inherit;
+	text-decoration: none;
+}
