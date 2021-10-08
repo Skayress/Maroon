@@ -1,0 +1,46 @@
+.about {
+	padding: 171px 0 70px;
+	background: url(../images/header-bg.jpg) center no-repeat;
+	background-size: cover;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 55px;
+	}
+	&__img {
+		margin-bottom: 15px;
+	}
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__card-title {
+		font-family: 'm-plus-1p-Medium';
+		font-size: 16px;
+	}
+	&__arrow {
+		display: flex;
+	}
+	&__box {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		max-width: 274px;
+		padding-top: 60px;
+	}
+	&__title {
+		@extend %title;
+		font-size: 58px;
+		line-height: 68px;
+		margin-bottom: 30px;
+		text-transform: uppercase;
+	}
+	&__descr {
+		margin-bottom: 40px;
+	}
+	&__btn {
+		@extend %btn;
+		margin: 0 auto;
+	}
+}

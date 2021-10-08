@@ -1,6 +1,11 @@
 .header {
 	padding: 40px 0;
 	border-bottom: 1px solid #DBDCE0;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -9,6 +14,10 @@
 	&__menu {
 		justify-content: flex-end;
 		margin-right: 51px;
+	}
+	&--transparent {
+		background-color: transparent;
+		border-bottom: none;
 	}
 }
 

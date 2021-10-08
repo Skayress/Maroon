@@ -1,10 +1,11 @@
 @import 'reset';
+@import 'fonts';
 @import 'vars';
 @import 'libs';
-@import 'fonts';
 @import 'global';
 
 @import 'blocks/header';
+@import 'blocks/about';
 @import 'blocks/footer';
 
 @import 'media';

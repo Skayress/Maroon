@@ -30,6 +30,16 @@ $bg-color: #F4F1ED;
 	color: #959595;
 }
 
+%btn {
+	display: block;
+	padding: 13px 27px;
+	border: 1px solid #B3BAC1;
+	font-family: 'm-plus-1p-Medium';
+	font-weight: 500;
+	border-radius: 2px;
+	font-size: 16px;
+	line-height: 140%;
+}
 
 // Миксины
 
