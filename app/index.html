@@ -10,37 +10,64 @@
 
 <body class="wrapper">
 	<!-- HEADER -->
-	<header class="header header--transparent">
+	<header class="header header--transparent" id="header">
 		<div class="container">
 			<div class="header__inner">
 				<!-- LOGO -->
-				<a class="logo" href="index.html">
+				<a class="logo header__logo" href="index.html">
 					<svg class="logo__img" width="131" height="21">
 						<use xlink:href="images/sprite.svg#logo"></use>
 					</svg>
 				</a>
 				<!-- MENU -->
-				<nav class="menu header__menu">
-					<ul class="menu__list">
-						<li class="menu__item">
-							<a class="menu__link" href="#">
+				<nav class="menu header-menu" id="header-menu">
+					<ul class="menu__list header-menu__list">
+						<li class="menu__item header-menu__item">
+							<a class="menu__link header-menu__link" href="#">
 								Каталог
 							</a>
 						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">
+						<li class="menu__item header-menu__item">
+							<a class="menu__link header-menu__link" href="#">
 								О нас
 							</a>
 						</li>
-						<li class="menu__item">
-							<a class="menu__link" href="#">
+						<li class="menu__item header-menu__item">
+							<a class="menu__link header-menu__link" href="#">
 								Контакты
 							</a>
 						</li>
 					</ul>
+					<ul class="social header__social">
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg class="social__img" width="11" height="18">
+									<use xlink:href="images/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg class="social__img" width="20" height="20">
+									<use xlink:href="images/sprite.svg#instagram"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#">
+								<svg class="social__img" width="20" height="17">
+									<use xlink:href="images/sprite.svg#twitter"></use>
+								</svg>
+							</a>
+						</li>
+					</ul>
 				</nav>
+				<!-- BURGER-MENU -->
+				<div class="burger" id="burger">
+					<span></span>
+				</div>
 				<!-- ACTIONS -->
-				<ul class="actions">
+				<ul class="actions header__actions">
 					<li class="actions__item">
 						<a class="actions__link user" href="#">
 							<svg class="actions__img" width="16" height="21">
@@ -68,8 +95,9 @@
 				<div class="about__inner">
 					<a class="about__card" href="#">
 						<picture>
-							<source srcset="images/main-1-lap.jpg" type="image/jpeg" media="(max-width:768px)">
-							<source srcset="images/main-1-mob.jpg" type="image/jpeg" media="(max-width:320px)">
+							<source srcset="images/main-1.jpg" type="image/jpeg" media="(min-width:1200px)">
+							<source srcset="images/main-1-lap.jpg" type="image/jpeg" media="(min-width:768px)">
+							<source srcset="images/main-1-mob.jpg" type="image/jpeg" media="(min-width:320px)">
 							<img class="about__img" src="images/main-1.jpg" alt="image card">
 						</picture>
 						<div class="about__row">
@@ -95,9 +123,10 @@
 					</div>
 					<a class="about__card" href="#">
 						<picture>
-							<source srcset="images/main-2-lap.jpg" type="image/jpeg" media="(max-width:768px)">
-							<source srcset="images/main-2-mob.jpg" type="image/jpeg" media="(max-width:320px)">
-							<img class="about__img" src="images/main-2.jpg" alt="image card">
+							<source srcset="images/main-2.jpg" type="image/jpeg" media="(min-width:1200px)">
+							<source srcset="images/main-2-lap.jpg" type="image/jpeg" media="(min-width:768px)">
+							<source srcset="images/main-2-mob.jpg" type="image/jpeg" media="(min-width:320px)">
+							<img class="about__img" src="images/main-1.jpg" alt="image card">
 						</picture>
 						<div class="about__row">
 							<h4 class="about__card-title">
@@ -177,6 +206,7 @@
 							</li>
 						</ul>
 					</nav>
+					<!-- SOCIAL -->
 					<ul class="social">
 						<li class="social__item">
 							<a class="social__link" href="#">

@@ -6,19 +6,21 @@
 	top: 0;
 	right: 0;
 	left: 0;
+	z-index: 10;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
-	&__menu {
-		justify-content: flex-end;
-		margin-right: 51px;
-	}
 	&--transparent {
 		background-color: transparent;
 		border-bottom: none;
 	}
+}
+
+.header-menu {
+	justify-content: flex-end;
+	margin-right: 51px;
 }
 
 .logo {
@@ -39,6 +41,10 @@
 			margin-right: 35px;
 		}
 	}
+}
+
+.burger {
+	display: none;
 }
 
 .actions {
