@@ -1,0 +1,72 @@
+.best-sellers {
+	display: flex;
+	align-items: center;
+	&__content {
+		flex: 0 0 100%;
+	}
+	&__body {
+		max-width: 214px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		@extend %title;
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 40px;
+	}
+	&__btn {
+		@extend %btn;
+		margin-right: auto;
+	}
+	&__slider {
+		flex: 0 0 70%;
+		transform: translateX(-100%);
+		padding-bottom: 50px;
+	}
+	&__slide {
+		width: 230px;
+		height: 312px;
+		position: relative;
+	}
+	&__slider-box {
+		position: absolute;
+		bottom: 25px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		width: 230px;
+	}
+	&__slider-name {
+		@extend %title;
+		font-size: 16px;
+		line-height: 1;
+		margin-bottom: 10px;
+	}
+	&__slider-descr {
+		font-size: 13px;
+		line-height: 1;
+		color: #9A9DA0;
+		margin-bottom: 20px;
+	}
+	&__slider-link {
+		font-size: 13px;
+		line-height: 1;
+		padding-bottom: 7px;
+		border-bottom: 1px solid $text-color;
+		margin: 0 auto;
+	}
+	&__slider-arrow {
+		position: absolute;
+		right: 100px;
+		bottom: 0;
+		cursor: pointer;
+		&--prev {
+			right: 160px;
+		}
+	}
+}

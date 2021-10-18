@@ -22,4 +22,21 @@ $(function(){
 			$('.header').addClass('header--transparent');
 		}
   });
+
+	// СЛАЙДЕР БЕСТСЕЛЛЕР
+	const swiper = new Swiper('.best-sellers__slider', {
+		loop: true,
+	
+		navigation: {
+		  nextEl: '.best-sellers__slider-arrow--next',
+		  prevEl: '.best-sellers__slider-arrow--prev',
+		},
+
+		slidesPerView: 3.7,
+
+		spaceBetween: 30,
+
+
+
+	 }); 
 });
