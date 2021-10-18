@@ -1,0 +1,28 @@
+.follow {
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+	&__image-box {
+		display: flex;
+		flex-wrap: wrap;
+		flex-shrink: 0;
+		width: 700px;
+		margin-right: 71px;
+	}
+	&__content {
+		display: flex;
+		flex-direction: column;
+	}
+	&__title {
+		@extend %title;
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 40px;
+	}
+	&__btn {
+		@extend %btn;
+		margin-right: auto;
+	}
+}
