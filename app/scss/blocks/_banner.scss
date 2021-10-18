@@ -1,0 +1,22 @@
+.banner {
+	padding: 81px 0;
+	background: url(../images/banner-bg.jpg) left center no-repeat;
+	background-size: cover;
+	&__box {
+		max-width: 284px;
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+	}
+	&__title {
+		@extend %title;
+		margin-bottom: 30px;
+	}
+	&__text {
+		margin-bottom: 40px;
+	}
+	&__btn {
+		@extend %btn;
+		margin-right: auto;
+	}
+}
