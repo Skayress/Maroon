@@ -1,0 +1,17 @@
+.quote {
+	padding: 120px 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	background: url(../images/quote-bg.jpg) bottom center no-repeat;
+	background-size: cover;
+	&__text {
+		@extend %title;
+		margin: 0 auto 50px;
+		max-width: 761px;
+	}
+	&__btn {
+		@extend %btn;
+		margin: 0 auto;
+	}
+}
