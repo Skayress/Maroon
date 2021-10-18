@@ -1,0 +1,32 @@
+.offer {
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+	&__content {
+		max-width: 670px;
+		width: 100%;
+		padding: 100px 223px 100px 100px;
+		background-color: $bg-color;
+		flex-shrink: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	&__img {
+		transform: translateX(-170px);
+	}
+	&__title {
+		@extend %title;
+		margin-bottom: 40px;
+	}
+	&__text {
+		margin-bottom: 45px;
+		&:nth-child(2) {
+			margin-bottom: 25px;
+		}
+	}
+	&__btn {
+		@extend %btn;
+		margin-right: auto;
+	}
+}
