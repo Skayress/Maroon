@@ -1,0 +1,29 @@
+.contacts {
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+	&__content {
+		padding: 100px 314px 100px 100px;
+		background-color: $bg-color;
+		max-width: 670px;
+		width: 100%;
+		flex-shrink: 0;
+	}
+	&__title {
+		@extend %title;
+		margin-bottom: 40px;
+	}
+	&__item {
+		margin-bottom: 35px;
+	}
+	&__item-title {
+		font-family: 'm-plus-1p-Medium';
+		margin-bottom: 20px;
+		
+	}
+}
+
+.map {
+	transform: translateX(-170px);
+}
