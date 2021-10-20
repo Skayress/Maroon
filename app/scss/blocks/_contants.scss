@@ -25,5 +25,13 @@
 }
 
 .map {
+	flex-shrink: 0;
 	transform: translateX(-170px);
+	background: url(../../images/map.png) center no-repeat;
+	background-size: cover;
+}
+
+.ymaps-2-1-79-map {
+	width: 670px;
+	height: 422px;
 }

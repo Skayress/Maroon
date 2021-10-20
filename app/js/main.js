@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 	// МЕНЮ БУРГЕР
 	const burger = document.getElementById('burger');
 	const header = document.getElementById('header');
@@ -13,30 +13,66 @@ $(function(){
 	burger.addEventListener('click', toggleClass);
 
 	// СКРОЛЛ ХЕДЕРА
-	$(window).scroll(function(){
+	$(window).scroll(function () {
 		let scrolled = $(this).scrollTop();
-		if( scrolled >= 30 ) {
+		if (scrolled >= 30) {
 			$('.header').removeClass('header--transparent');
-		}   
-		if( scrolled <= 30 ) {     
+		}
+		if (scrolled <= 30) {
 			$('.header').addClass('header--transparent');
 		}
-  });
+	});
 
 	// СЛАЙДЕР БЕСТСЕЛЛЕР
 	const swiper = new Swiper('.best-sellers__slider', {
 		loop: true,
-	
+
 		navigation: {
-		  nextEl: '.best-sellers__slider-arrow--next',
-		  prevEl: '.best-sellers__slider-arrow--prev',
+			nextEl: '.best-sellers__slider-arrow--next',
+			prevEl: '.best-sellers__slider-arrow--prev',
 		},
 
 		slidesPerView: 3.7,
 
 		spaceBetween: 30,
 
-
-
-	 }); 
+	});
 });
+
+// КАРТА
+let myMap;
+let myPlacemark;
+
+// Дождёмся загрузки API и готовности DOM.
+ymaps.ready(init);
+
+function init() {
+	myMap = new ymaps.Map('map', {
+		center: [59.938635, 30.323118], // Санкт-Петербург
+		zoom: 14
+	},
+		{
+			searchControlProvider: 'yandex#search'
+		})
+
+	 myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {
+		balloonContent: 'Маленькая иконка'
+	}, {
+		iconLayout: `default#image`,
+		iconImageClipRect: [[16 ,22], [16, 22]],
+		iconImageHref: `../images/geo-mark.svg`,
+		iconImageSize: [16, 22],
+		iconImageOffset: [0, 12]
+	}
+	)
+
+	myMap.geoObjects.add(myPlacemark);
+
+
+
+	document.getElementById('destroyButton').onclick = function () {
+		// Для уничтожения используется метод destroy.
+		myMap.destroy();
+	};
+
+}
