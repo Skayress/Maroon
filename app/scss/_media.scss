@@ -23,9 +23,18 @@
 		background: url(../images/banner-bg-lap.jpg) left center no-repeat;
 		background-size: cover;
 	}
+	.offer__inner {
+		overflow: hidden;
+	}
+	.offer__content {
+		padding: 60px 223px 60px 60px;
+	}
 }
 
 @media (max-width: 768px) {
+	.section {
+		margin-bottom: 80px;
+	}
 	.header__logo {
 		order: 2;
 	}
@@ -156,6 +165,31 @@
 	}
 	.banner__btn {
 		margin: 0 auto;
+	}
+	.offer__inner {
+		flex-direction: column;
+		overflow: visible;	
+	}
+	.offer__content {
+		padding: 60px 30px 160px;
+		text-align: center;
+	}
+	.offer__title {
+		font-size: 28px;
+		margin-bottom: 25px;
+	}
+	.offer__text {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.offer__text:nth-child(2) {
+		display: none;
+  	}
+	.offer__btn {
+		margin: 0 auto;
+	}
+	.offer__img {
+		transform: translate(0, -60px);
 	}
 	.footer__content {
 		flex-wrap: wrap;
