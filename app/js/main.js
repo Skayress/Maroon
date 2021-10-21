@@ -16,10 +16,10 @@ $(function () {
 	$(window).scroll(function () {
 		let scrolled = $(this).scrollTop();
 		if (scrolled >= 30) {
-			$('.header').removeClass('header--transparent');
+			$('.header').addClass('header--scroll');
 		}
 		if (scrolled <= 30) {
-			$('.header').addClass('header--transparent');
+			$('.header').removeClass('header--scroll');
 		}
 	});
 
