@@ -36,6 +36,24 @@ $(function () {
 
 		spaceBetween: 30,
 
+		breakpoints: {
+			320: {
+				slidesPerView: 1.2
+			},
+			
+			768: {
+				slidesPerView: 1.9
+			},
+
+			900: {
+				slidesPerView: 2.7,
+			},
+
+			1200: {
+				slidesPerView: 3.7
+			}
+		}
+
 	});
 });
 

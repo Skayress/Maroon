@@ -1,4 +1,4 @@
-@media (max-width: 1999px) {
+@media (max-width: 1200px) {
 	.about__inner {
 		position: relative;
 		padding: 0 45px;
@@ -16,9 +16,16 @@
 		background: url(../images/header-bg-lap.jpg) center no-repeat;
 		background-size: cover;
 	}
+	.best-sellers__slider {
+		margin-left: 40px;
+	}
+	.banner {
+		background: url(../images/banner-bg-lap.jpg) left center no-repeat;
+		background-size: cover;
+	}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 	.header__logo {
 		order: 2;
 	}
@@ -129,6 +136,26 @@
 	}
 	.about__title {
 		font-size: 42px;
+	}
+	.banner {
+		padding: 300px 0 60px;
+		background: url(../images/banner-bg-mob.jpg) left center no-repeat;
+    	background-size: cover;
+	}
+	.banner__box {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.banner__title {
+		font-size: 28px;
+		margin-bottom: 25px;
+	}
+	.banner__text {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.banner__btn {
+		margin: 0 auto;
 	}
 	.footer__content {
 		flex-wrap: wrap;
