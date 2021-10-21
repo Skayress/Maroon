@@ -29,6 +29,11 @@
 	.offer__content {
 		padding: 60px 223px 60px 60px;
 	}
+	.quote {
+		background: url(../images/quote-bg-lap.jpg) bottom center no-repeat;
+    background-size: cover;
+	 padding: 60px 60px 100px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -190,6 +195,15 @@
 	}
 	.offer__img {
 		transform: translate(0, -60px);
+	}
+	.quote {
+		padding: 60px 40px;
+		background: url(../images/quote-bg-mob.jpg) bottom center no-repeat;
+		background-size: cover;
+	}
+	.quote__text {
+		font-size: 22px;
+		margin: 0 auto 30px;
 	}
 	.footer__content {
 		flex-wrap: wrap;
