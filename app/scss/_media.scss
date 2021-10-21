@@ -34,6 +34,15 @@
     background-size: cover;
 	 padding: 60px 60px 100px;
 	}
+	.follow__image-box {
+		width: 354px;
+	}
+	.follow__img:nth-child(1) {
+		display: none;
+	}
+	.follow__img:nth-child(4) {
+		display: none;
+	}
 }
 
 @media (max-width: 768px) {
@@ -204,6 +213,30 @@
 	.quote__text {
 		font-size: 22px;
 		margin: 0 auto 30px;
+	}
+	.follow__inner {
+		flex-direction: column;
+	}
+	.follow__image-box {
+		order: 2;
+		margin-right: 0;
+		width: 290px;
+	}
+	.follow__content {
+		order: 1;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+	.follow__title {
+		font-size: 28px;
+		margin-bottom: 25px;
+	}
+	.follow__text {
+		font-size: 16px;
+		margin-bottom: 30px;
+	}
+	.follow__btn {
+		margin: 0 auto;
 	}
 	.footer__content {
 		flex-wrap: wrap;
