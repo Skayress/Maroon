@@ -13,6 +13,10 @@ html, body {
 	flex: 1 1 auto;
 }
 
+.catalog-main {
+	padding-top: 142px;
+}
+
 .container {
 	max-width: 1200px;
 	width: 100%;
@@ -22,4 +26,46 @@ html, body {
 
 .section {
 	margin-bottom: 140px;
+}
+
+.breadcrumbs {
+	font-family: 'm-plus-1p-Medium';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-grow: 1;
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		color: #9A9DA0;
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+		&--active {
+			color: $text-color;
+		}
+	}
+}
+
+.arrows {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 89px;
+	width: 100%;
+	position: absolute;
+	right: 0;
+}
+
+.arrow-left,
+.arrow-right {
+	&:hover {
+		cursor: pointer;
+	}
 }

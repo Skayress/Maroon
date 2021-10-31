@@ -1,0 +1,100 @@
+.catalog {
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 60px;
+	}
+	&__title {
+		@extend %title;
+		font-size: 36px;
+	}
+	&__inner {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-gap: 30px;
+		margin-bottom: 50px;
+	}
+}
+
+.filter-btn {
+	@extend %btn;
+	padding: 13px 41px;
+	background-color: transparent;
+}
+
+.card {
+	width: 270px;
+	height: 360px;
+	padding: 20px;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	&__row {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		&:nth-child(2) {
+			font-size: 13px;
+			color: $gray;
+		}
+	}
+	&__name {
+		@extend %title;
+		font-size: 16px;
+	}
+	&__price {
+		font-family: 'm-plus-1p-Medium';
+		font-size: 13px;
+		padding-right: 10px;
+		position: relative;
+		&::before {
+			content: '';
+			width: 7px;
+			height: 9px;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			background: url(../images/price.svg);
+		}
+	}
+	&-high {
+		background: url(../../images/card/high.jpg) center no-repeat;
+	}
+	&-rest {
+		background: url(../../images/card/rest.jpg) center no-repeat;
+	}
+	&-rose {
+		background: url(../../images/card/rose.jpg) center no-repeat;
+	}
+	&-milk {
+		background: url(../../images/card/milk.jpg) center no-repeat;
+	}
+	&-paradise {
+		background: url(../../images/card/paradise.jpg) center no-repeat;
+	}
+	&-sun {
+		background: url(../../images/card/sun.jpg) center no-repeat;
+	}
+	&-violet {
+		background: url(../../images/card/violet.jpg) center no-repeat;
+	}
+	&-clean {
+		background: url(../../images/card/clean.jpg) center no-repeat;
+	}
+	&-cocount {
+		background: url(../../images/card/cocount.jpg) center no-repeat;
+	}
+	&-lavender {
+		background: url(../../images/card/lavender.jpg) center no-repeat;
+	}
+	&-lotos {
+		background: url(../../images/card/lotos.jpg) center no-repeat;
+	}
+	&-earth {
+		background: url(../../images/card/earth.jpg) center no-repeat;
+	}
+}
