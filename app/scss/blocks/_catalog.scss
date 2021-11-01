@@ -27,15 +27,16 @@
 .card {
 	width: 270px;
 	height: 360px;
-	padding: 20px;
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	padding-bottom: 20px;
 	&__row {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		padding: 0 20px;
 		&:nth-child(2) {
 			font-size: 13px;
 			color: $gray;
@@ -96,5 +97,17 @@
 	}
 	&-earth {
 		background: url(../../images/card/earth.jpg) center no-repeat;
+	}
+}
+
+.watched-slider {
+	padding-bottom: 50px;
+	&__arrows {
+		position: absolute;
+		bottom: 0px;
+		right: 0;
+	}
+	&__prev {
+		right: 58px;
 	}
 }

@@ -57,6 +57,23 @@ $(function () {
 	});
 });
 
+// СЛАЙДЕР ПРОСМОТРЕННЫХ
+const swiper = new Swiper('.watched-slider', {
+	loop: true,
+
+	navigation: {
+		nextEl: '.watched-slider__next',
+		prevEl: '.watched-slider__prev',
+	},
+
+	slidesPerView: 4,
+
+	pagination: {
+		type: 'fraction'
+	}
+
+});
+
 // КАРТА
 let myMap;
 let myPlacemark;
