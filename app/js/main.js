@@ -38,19 +38,26 @@ $(function () {
 
 		breakpoints: {
 			320: {
-				slidesPerView: 1.2
+				slidesPerView: 1.2,
+				spaceBetween: 30,
 			},
-			
+			576: {
+				slidesPerView: 2.2,
+				spaceBetween: 30,
+			},
 			768: {
-				slidesPerView: 1.9
+				slidesPerView: 1.5,
+				spaceBetween: 30,
 			},
 
-			900: {
+			1000: {
 				slidesPerView: 2.7,
+				spaceBetween: 30,
 			},
 
 			1200: {
-				slidesPerView: 3.7
+				slidesPerView: 3.7,
+				spaceBetween: 30,
 			}
 		}
 

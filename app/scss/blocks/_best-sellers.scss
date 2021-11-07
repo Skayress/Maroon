@@ -1,14 +1,10 @@
 .best-sellers {
 	display: flex;
 	align-items: center;
-	&__content {
-		flex: 0 0 100%;
-	}
 	&__body {
-		max-width: 214px;
-		width: 100%;
 		display: flex;
 		flex-direction: column;
+		padding: 0 86px 50px 70px;
 	}
 	&__title {
 		@extend %title;
@@ -22,8 +18,6 @@
 		margin-right: auto;
 	}
 	&__slider {
-		flex: 0 0 70%;
-		transform: translateX(-100%);
 		padding-bottom: 50px;
 	}
 	&__slide {
