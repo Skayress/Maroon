@@ -40,6 +40,10 @@ $gray: #9A9DA0;
 	border-radius: 2px;
 	font-size: 16px;
 	line-height: 140%;
+	transition: .3s;
+	&:hover {
+		background-color: rgba(252, 246, 246, 0.671);
+	}
 }
 
 // Миксины

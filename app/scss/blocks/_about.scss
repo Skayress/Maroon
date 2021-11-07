@@ -15,12 +15,20 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+	&__card {
+		&:hover {
+			.about__arrow {
+				transform: translateX(13px);
+			}
+		}
+	}
 	&__card-title {
 		font-family: 'm-plus-1p-Medium';
 		font-size: 16px;
 	}
 	&__arrow {
 		display: flex;
+		transition: .3s;
 	}
 	&__box {
 		display: flex;

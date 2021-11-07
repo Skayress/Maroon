@@ -41,8 +41,32 @@
 	}
 	&__item {
 		line-height: 1;
+		position: relative;
+		padding-bottom: 5px;
 		&:not(:last-child) {
 			margin-right: 35px;
+		}
+		&::after,
+		&::before {
+			content: '';
+			height: 1px;
+			width: 0;
+			position: absolute;
+			bottom: 0;
+			background-color: $text-color;
+			transition: .2s;
+		}
+		&::after {
+			left: 0;
+		}
+		&::before {
+			right: 0;
+		}
+		&:hover {
+			&::after,
+			&::before {
+				width: 50%;
+			}
 		}
 	}
 }
@@ -61,5 +85,11 @@
 	}
 	&__link {
 		display: flex;
+	}
+	&__img {
+		transition: .3s;
+		&:hover {
+			fill: $bg-color;
+		}
 	}
 }
