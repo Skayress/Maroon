@@ -22,6 +22,77 @@
 	@extend %btn;
 	padding: 13px 41px;
 	background-color: transparent;
+	cursor: pointer;
+}
+
+.filter {
+	padding: 0 0;
+	height: 0;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	transition: all .3s;
+	&__list {
+		padding: 0 40px;
+		display: flex;
+		flex-direction: column
+	}
+	&__item {
+		margin-bottom: 22px;
+		font-size: 16px;
+		padding-left: 24px;
+	}
+	&__label {
+		position: relative;
+		cursor: pointer;
+	}
+	&__check {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		padding-left: 20px;
+		&:checked + .filter__span::after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			background-color: $text-color;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	&__span {
+		position: absolute;
+		width: 14px;
+		height: 14px;
+		border: 1px solid #CDCDCD;
+		border-radius: 50%;
+		margin-left: -24px;
+		top: 5px;
+	}
+	&__title {
+		@extend %text-medium;
+		margin-bottom: 30px;
+	}
+	&__btn-wrapper {
+		display: flex;
+		padding-left: 0;
+	}
+	&__btn {
+		@extend %btn;
+	}
+	&__btn-apply {
+		margin-right: 20px;
+		border: 1px solid #122947;
+	}
+	&--vision {
+		padding: 50px 0;
+		height: auto;
+	}
 }
 
 .card {

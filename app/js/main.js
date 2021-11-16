@@ -81,6 +81,11 @@ const swiper = new Swiper('.watched-slider', {
 
 });
 
+// ФИЛЬТР
+$('.filter-btn').on('click', function() {
+	$('.filter').toggleClass('filter--vision');
+});
+
 // КАРТА
 let myMap;
 let myPlacemark;
