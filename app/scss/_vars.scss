@@ -42,6 +42,7 @@ $gray: #9A9DA0;
 	line-height: 140%;
 	transition: .3s;
 	cursor: pointer;
+	background-color: transparent;
 	&:hover {
 		background-color: rgba(252, 246, 246, 0.671);
 	}

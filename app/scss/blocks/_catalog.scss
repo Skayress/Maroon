@@ -171,6 +171,14 @@
 	}
 }
 
+.watched {
+	&__title {
+		@extend %title;
+		text-align: center;
+		margin-bottom: 24px;
+	}
+}
+
 .watched-slider {
 	padding-bottom: 50px;
 	&__arrows {

@@ -82,9 +82,19 @@ const swiper = new Swiper('.watched-slider', {
 });
 
 // ФИЛЬТР
-$('.filter-btn').on('click', function() {
+$('.filter-btn').on('click', function () {
 	$('.filter').toggleClass('filter--vision');
 });
+
+// АККОРДЕОН
+$('#accordeon .full-card__accordion-head').on('click', f_acc);
+
+function f_acc() {
+	//скрываем все кроме того, что должны открыть
+	$('#accordeon .full-card__accordion-body').not($(this).next()).slideUp(400);
+	// открываем или скрываем блок под заголовоком, по которому кликнули
+	$(this).next().slideToggle(400);
+}
 
 // КАРТА
 let myMap;
@@ -102,11 +112,11 @@ function init() {
 			searchControlProvider: 'yandex#search'
 		})
 
-	 myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {
+	myPlacemark = new ymaps.Placemark([59.938635, 30.323118], {
 		balloonContent: 'Маленькая иконка'
 	}, {
 		iconLayout: `default#image`,
-		iconImageClipRect: [[16 ,22], [16, 22]],
+		iconImageClipRect: [[16, 22], [16, 22]],
 		iconImageHref: `../images/geo-mark.svg`,
 		iconImageSize: [16, 22],
 		iconImageOffset: [0, 12]

@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Maroon</title>
+	<title>Maroon: Карточка товара</title>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -88,36 +88,194 @@
 	</header>
 
 	<!-- MAIN -->
-	<main class="main">
-		
-		<!-- BEST SELLERS -->
-		<section class="best-sellers section">
-			
+	<main class="main card-main">
+		<section class="full-card section">
+			<div class="container">
+				<div class="full-card__inner">
+					<div class="full-card__img">
+						<img src="images/full-card/rose.jpg" alt="rose">
+					</div>
+					<div class="full-card__content">
+						<h3 class="full-card__title">
+							Rose
+						</h3>
+						<span class="full-card__descr">
+							крем для лица
+						</span>
+						<div class="full-card__text">
+							<p class="full-card__paragraph">
+								Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.
+							</p>
+							<p class="full-card__paragraph">
+								Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое
+								увлажнение, регенерацию клеток.
+							</p>
+						</div>
+						<div class="full-card__accordions" id="accordeon">
+							<div class="full-card__accordion">
+								<div class="full-card__accordion-head">
+									<h5 class="full-card__accordion-title">
+										Состав
+									</h5>
+									<div class="full-card__plus"></div>
+								</div>
+								<div class="full-card__accordion-body">
+									Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch,
+									Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol,
+									Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.
+								</div>
+							</div>
+							<div class="full-card__accordion">
+								<div class="full-card__accordion-head">
+									<h5 class="full-card__accordion-title">
+										Способ применения
+									</h5>
+									<div class="full-card__plus"></div>
+								</div>
+								<div class="full-card__accordion-body">
+									Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области
+									вокруг глаз. Подходит для дневного
+									и ночного ухода.
+								</div>
+							</div>
+						</div>
+						<div class="full-card__volume">
+							<h4 class="full-card__volume-title">
+								Объем:
+							</h4>
+							<div class="full-card__volume-box">
+								<div class="filter__item">
+									<label class="filter__label">
+										<input class="filter__check" type="radio">
+										<span class="filter__span"></span>
+										50ml
+									</label>
+								</div>
+								<div class="filter__item">
+									<label class="filter__label">
+										<input class="filter__check" type="radio">
+										<span class="filter__span"></span>
+										30ml
+									</label>
+								</div>
+							</div>
+						</div>
+						<div class="full-card__box">
+							<div class="full-card__price">
+								890
+							</div>
+							<button class="full-card__btn">
+								Добавить в корзину
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 		</section>
 
-		<!-- BANNER -->
-		<section class="banner">
+		<section class="watched section">
+			<div class="container">
+				<h3 class="watched__title">
+					Вам также может понравиться
+				</h3>
+				<div class="swiper watched-slider">
+					<div class="swiper-wrapper watched-slider__wrapper">
+						<div class="swiper-slide watched-slider__slide">
+							<div class="card card-clean">
+								<div class="card__row">
+									<div class="card__name">
+										High
+									</div>
+									<div class="card__price">
+										990
+									</div>
+								</div>
+								<div class="card__row">
+									<div class="card__descr">
+										крем для лица
+									</div>
+									<div class="card__volume">
+										50ml
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide watched-slider__slide">
+							<div class="card card-lotos">
+								<div class="card__row">
+									<div class="card__name">
+										High
+									</div>
+									<div class="card__price">
+										990
+									</div>
+								</div>
+								<div class="card__row">
+									<div class="card__descr">
+										крем для лица
+									</div>
+									<div class="card__volume">
+										50ml
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide watched-slider__slide">
+							<div class="card card-lavender">
+								<div class="card__row">
+									<div class="card__name">
+										High
+									</div>
+									<div class="card__price">
+										990
+									</div>
+								</div>
+								<div class="card__row">
+									<div class="card__descr">
+										крем для лица
+									</div>
+									<div class="card__volume">
+										50ml
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide watched-slider__slide">
+							<div class="card card-cocount">
+								<div class="card__row">
+									<div class="card__name">
+										High
+									</div>
+									<div class="card__price">
+										990
+									</div>
+								</div>
+								<div class="card__row">
+									<div class="card__descr">
+										крем для лица
+									</div>
+									<div class="card__volume">
+										50ml
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-		</section>
+					<div class="swiper-pagination watched-slider__pagination"></div>
 
-		<!-- OFFER -->
-		<section class="offer">
-
-		</section>
-
-		<!-- QUOTE -->
-		<section class="quote">
-
-		</section>
-
-		<!-- FOLLOW -->
-		<section class="follow">
-
-		</section>
-
-		<!-- CONTACTS -->
-		<section class="contacts">
-
+					<div class="swiper-button-prev watched-slider__arrows watched-slider__prev">
+						<svg class="arrow-left" width="27" height="14">
+							<use xlink:href="images/sprite.svg#arrow-left"></use>
+						</svg>
+					</div>
+					<div class="swiper-button-next watched-slider__arrows watched-slider__next">
+						<svg class="arrow-right" width="27" height="14">
+							<use xlink:href="images/sprite.svg#arrow-right"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 
