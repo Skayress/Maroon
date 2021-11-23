@@ -29,6 +29,44 @@ html, body {
 	margin-bottom: 140px;
 }
 
+.checkbox {
+	margin-bottom: 22px;
+	font-size: 16px;
+	padding-left: 24px;
+	&__label {
+		position: relative;
+		cursor: pointer;
+	}
+	&__check {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		padding-left: 20px;
+		&:checked + .checkbox__span::after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			background-color: $text-color;
+			border-radius: 50%;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+	&__span {
+		position: absolute;
+		width: 14px;
+		height: 14px;
+		border: 1px solid #CDCDCD;
+		border-radius: 50%;
+		margin-left: -24px;
+		top: 5px;
+	}
+}
+
 .breadcrumbs {
 	font-family: 'm-plus-1p-Medium';
 	display: flex;

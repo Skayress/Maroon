@@ -110,6 +110,13 @@
 		display: flex;
 		align-items: center
 	}
+	&__item {
+		font-size: 18px;
+		margin-bottom: 0;
+		&:not(:last-child) {
+			margin-right: 15px;
+		}
+	}
 	&__price {
 		@extend %text-medium;
 		font-size: 26px;
