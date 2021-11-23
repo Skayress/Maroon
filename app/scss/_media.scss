@@ -37,6 +37,51 @@
     background-size: cover;
 	 padding: 60px 60px 100px;
 	}
+	.catalog__inner {
+		grid-template-columns: repeat(2, 1fr);
+    	grid-template-rows: repeat(6, 1fr);
+	}
+	.card {
+		width: 324px;
+		height: 350px;
+		margin: 0 auto;
+		&-high {
+			background: url(../../images/card/high-lap.jpg) center no-repeat;
+		}
+		&-rest {
+			background: url(../../images/card/rest-lap.jpg) center no-repeat;
+		}
+		&-rose {
+			background: url(../../images/card/rose-lap.jpg) center no-repeat;
+		}
+		&-milk {
+			background: url(../../images/card/milk-lap.jpg) center no-repeat;
+		}
+		&-paradise {
+			background: url(../../images/card/paradise-lap.jpg) center no-repeat;
+		}
+		&-sun {
+			background: url(../../images/card/sun-lap.jpg) center no-repeat;
+		}
+		&-violet {
+			background: url(../../images/card/violet-lap.jpg) center no-repeat;
+		}
+		&-clean {
+			background: url(../../images/card/clean-lap.jpg) center no-repeat;
+		}
+		&-cocount {
+			background: url(../../images/card/cocount-lap.jpg) center no-repeat;
+		}
+		&-lavender {
+			background: url(../../images/card/lavender-lap.jpg) center no-repeat;
+		}
+		&-lotos {
+			background: url(../../images/card/lotos-lap.jpg) center no-repeat;
+		}
+		&-earth {
+			background: url(../../images/card/earth-lap.jpg) center no-repeat;
+		}
+	}
 	.follow__image-box {
 		width: 354px;
 	}
@@ -242,6 +287,60 @@
 	.offer__img {
 		transform: translate(0, -60px);
 	}
+	.catalog__inner {
+		grid-template-columns: repeat(1, 1fr);
+    	grid-template-rows: repeat(12, 1fr);
+	}
+	.card {
+		width: 290px;
+		height: 290px;
+		margin: 0 auto;
+		&-high {
+			background: url(../../images/card/high-mob.jpg) center no-repeat;
+		}
+		&-rest {
+			background: url(../../images/card/rest-mob.jpg) center no-repeat;
+		}
+		&-rose {
+			background: url(../../images/card/rose-mob.jpg) center no-repeat;
+		}
+		&-milk {
+			background: url(../../images/card/milk-mob.jpg) center no-repeat;
+		}
+		&-paradise {
+			background: url(../../images/card/paradise-mob.jpg) center no-repeat;
+		}
+		&-sun {
+			background: url(../../images/card/sun-mob.jpg) center no-repeat;
+		}
+		&-violet {
+			background: url(../../images/card/violet-mob.jpg) center no-repeat;
+		}
+		&-clean {
+			background: url(../../images/card/clean-mob.jpg) center no-repeat;
+		}
+		&-cocount {
+			background: url(../../images/card/cocount-mob.jpg) center no-repeat;
+		}
+		&-lavender {
+			background: url(../../images/card/lavender-mob.jpg) center no-repeat;
+		}
+		&-lotos {
+			background: url(../../images/card/lotos-mob.jpg) center no-repeat;
+		}
+		&-earth {
+			background: url(../../images/card/earth-mob.jpg) center no-repeat;
+		}
+	}
+	.breadcrumbs {
+		justify-content: space-between;
+		&__list {
+			flex-grow: 0;
+		}
+	}
+	.arrows {
+		position: static;
+	}
 	.quote {
 		padding: 60px 40px;
 		background: url(../images/quote-bg-mob.jpg) bottom center no-repeat;
@@ -340,6 +439,9 @@
 	}
 	.menu__item:not(:last-child) {
 		margin-right: 30px;
+  	}
+	.filter-btn {
+		padding: 13px 28px;
   	}
 	.footer__menu {
 		margin-bottom: 5px;

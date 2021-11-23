@@ -23,6 +23,19 @@ $(function () {
 		}
 	});
 
+	// ПЕРЕХОД ПО ЯКОРЯМ
+	$("#header-menu, #footer-menu").on("click", "a", function (event) {
+
+		//забираем идентификатор бока с атрибута href
+		var id = $(this).attr('href'),
+
+			//узнаем высоту от начала страницы до блока на который ссылается якорь
+			top = $(id).offset().top;
+
+		//анимируем переход на расстояние - top за 1500 мс
+		$('body,html').animate({ scrollTop: top }, 1300);
+	});
+
 	// СЛАЙДЕР БЕСТСЕЛЛЕР
 	const swiper = new Swiper('.best-sellers__slider', {
 		loop: true,
@@ -84,6 +97,14 @@ const swiper = new Swiper('.watched-slider', {
 // ФИЛЬТР
 $('.filter-btn').on('click', function () {
 	$('.filter').toggleClass('filter--vision');
+	$('.filter-btn').toggleClass('filter-btn--d-none');
+	$('.catalog__cross').toggleClass('catalog__cross--d-block');
+});
+
+$('.catalog__cross').on('click', function () {
+	$('.filter').toggleClass('filter--vision');
+	$('.filter-btn').toggleClass('filter-btn--d-none');
+	$('.catalog__cross').toggleClass('catalog__cross--d-block');
 });
 
 // АККОРДЕОН

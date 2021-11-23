@@ -5,6 +5,13 @@
 		justify-content: space-between;
 		margin-bottom: 60px;
 	}
+	&__cross {
+		cursor: pointer;
+		display: none;
+		&--d-block {
+			display: block;
+		}
+	}
 	&__title {
 		@extend %title;
 		font-size: 36px;
@@ -18,11 +25,16 @@
 	}
 }
 
+
+
 .filter-btn {
 	@extend %btn;
 	padding: 13px 41px;
 	background-color: transparent;
 	cursor: pointer;
+	&--d-none {
+		display: none;
+	}
 }
 
 .filter {
