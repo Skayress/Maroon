@@ -102,11 +102,39 @@
 		width: 369px;
 		height: 374px;
 	}
+	.full-card__inner {
+		flex-wrap: wrap;
+	}
+	.full-card__img {
+		margin: 0 auto 60px;
+	}
 }
 
 @media (max-width: 900px) {
 	.map {
 		transform: translateX(-310px);
+	}
+	.filter__btn-wrapper {
+		flex-wrap: wrap;
+	}
+	.filter__btn {
+		width: 100%;
+	}
+	.filter__btn-apply {
+		margin-right: 0;
+		margin-bottom: 15px;
+  	}
+  
+  
+}
+
+@media (max-width: 870px) {
+	.filter {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	ul.filter__list {
+		margin-bottom: 20px;
 	}
 }
 
@@ -291,6 +319,10 @@
 		grid-template-columns: repeat(1, 1fr);
     	grid-template-rows: repeat(12, 1fr);
 	}
+	.filter {
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
 	.card {
 		width: 290px;
 		height: 290px;
@@ -425,6 +457,9 @@
 	}
 	.best-sellers__slider {
 		padding: 0;
+	}
+	.swiper-pagination-fraction {
+		width: auto;
 	}
 }
 

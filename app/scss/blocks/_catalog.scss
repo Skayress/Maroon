@@ -70,7 +70,7 @@
 		border: 1px solid #122947;
 	}
 	&--vision {
-		padding: 50px 0;
+		padding: 0 0 50px;
 		height: auto;
 	}
 }
@@ -83,6 +83,7 @@
 	flex-direction: column;
 	justify-content: flex-end;
 	padding-bottom: 20px;
+	transition: all .3s;
 	&__row {
 		display: flex;
 		align-items: center;
@@ -149,6 +150,9 @@
 	&-earth {
 		background: url(../../images/card/earth.jpg) center no-repeat;
 	}
+	&:hover {
+		opacity: .7;
+	}
 }
 
 .watched {
@@ -163,10 +167,20 @@
 	padding-bottom: 50px;
 	&__arrows {
 		position: absolute;
-		bottom: 0px;
+		bottom: 9px;
 		right: 0;
+		z-index: 100;
 	}
 	&__prev {
 		right: 58px;
 	}
+}
+
+.swiper-pagination-current,
+.swiper-pagination-total {
+	font-family: 'm-plus-1p-Medium';
+}
+
+.swiper-pagination-total {
+	color: $gray;
 }

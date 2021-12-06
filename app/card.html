@@ -92,9 +92,12 @@
 		<section class="full-card section">
 			<div class="container">
 				<div class="full-card__inner">
-					<div class="full-card__img">
-						<img src="images/full-card/rose.jpg" alt="rose">
-					</div>
+					<picture class="full-card__img">
+						<source srcset="images/full-card/rose.jpg" type="image/jpeg" media="(min-width:1200px)">
+						<source srcset="images/full-card/rose-lap.jpg" type="image/jpeg" media="(min-width:768px)">
+						<source srcset="images/full-card/rose-mob.jpg" type="image/jpeg" media="(min-width:320px)">
+						<img src="images/full-card/rose.jpg">
+					</picture>
 					<div class="full-card__content">
 						<h3 class="full-card__title">
 							Rose

@@ -89,9 +89,21 @@ const swiper = new Swiper('.watched-slider', {
 	slidesPerView: 4,
 
 	pagination: {
-		type: 'fraction'
-	}
+		el: '.watched-slider__pagination',
+		type: 'fraction',
+	},
 
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		678: {
+			slidesPerView: 2,
+		},
+		1200: {
+			slidesPerView: 4,
+		}
+	}
 });
 
 // ФИЛЬТР
